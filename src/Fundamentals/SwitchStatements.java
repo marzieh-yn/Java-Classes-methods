@@ -1,3 +1,5 @@
+package Fundamentals;
+
 public class SwitchStatements {
     public static void main(String[] args){
         String role = "moderator";

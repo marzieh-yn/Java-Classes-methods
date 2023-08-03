@@ -1,3 +1,5 @@
+package Fundamentals;
+
 import java.util.Arrays;
 
 public class Array {

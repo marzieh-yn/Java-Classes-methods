@@ -1,3 +1,5 @@
+package Fundamentals;
+
 public class IfStatement {
     public static void main(String[] args){
         int temp = 30;

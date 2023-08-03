@@ -1,3 +1,5 @@
+package Fundamentals;
+
 public class MathClass {
     public static void main(String[] args){
        int x =  Math.round(1.3F);

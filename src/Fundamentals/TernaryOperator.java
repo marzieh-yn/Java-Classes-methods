@@ -1,3 +1,5 @@
+package Fundamentals;
+
 public class TernaryOperator {
     public static void main(String[] args){
         int income = 90_000;
