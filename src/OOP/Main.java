@@ -81,5 +81,27 @@ public class Main {
         UIControl[] controls1 = { new TextBox(), new CheckBox()};
         for(var controls : controls1)
             controls.render();
+
+        System.out.println("**********************");
+
+//        dependency injection
+
+        var calculate = new TaxCalculator2018(100000);
+        var report = new TaxReport(calculate);
+//        report.show();
+
+        System.out.println("**********************");
+
+//        setter injection
+
+//        report.setCalculator(new TaxCalculator2019());
+//        report.show();
+
+        System.out.println("**********************");
+
+//        method injection
+
+        report.show(new TaxCalculator2019());
+
     }
 }
