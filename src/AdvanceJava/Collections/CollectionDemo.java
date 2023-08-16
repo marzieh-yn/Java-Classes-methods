@@ -18,14 +18,15 @@ public class CollectionDemo {
              ) {
             System.out.println(item);
         }
-        System.out.println("**********************");
+
+        System.out.println("*********** collection list ***********");
 
         System.out.println(collection);
-        System.out.println("**********************");
+
+        System.out.println("********** Size ************");
 
         var size = collection.size();
         System.out.println(size);
-        System.out.println("**********************");
 
         Object[] objectArray = collection.toArray();
         String[] stringArray = collection.toArray(new String[0]);
@@ -34,22 +35,27 @@ public class CollectionDemo {
         Collections.addAll(other, "a", "b", "c", "n", "j", "k", "g", "d");
 //      or
 //        Collections.addAll(collection)
+
+        System.out.println("********** location in memory ************");
 //        location in memory
         System.out.println(collection == other);
+
+        System.out.println("********* compare content *************");
 //        compare content
         System.out.println(collection.equals(other));
-        System.out.println("**********************");
+
+        System.out.println("********* contains *************");
 
         collection.remove("a");
         var collectionA = collection.contains("a");
         System.out.println(collectionA);
-        System.out.println("**********************");
+
+        System.out.println("*********** removing all ***********");
 
 //        removing all items
         collection.clear();
         var isEmpty = collection.isEmpty();
         System.out.println(isEmpty);
-        System.out.println("**********************");
 
     }
 }

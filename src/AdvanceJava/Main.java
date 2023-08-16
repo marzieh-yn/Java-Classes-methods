@@ -3,6 +3,7 @@ package AdvanceJava;
 import AdvanceJava.Collections.*;
 import AdvanceJava.Exceptions.ExceptionsDemo;
 import AdvanceJava.Generics.*;
+import AdvanceJava.Lambdas.LambdasDemo;
 
 import java.io.IOException;
 import java.util.*;
@@ -17,7 +18,7 @@ public class Main {
             System.out.println("An Expected error occurred");
         }
 
-        System.out.println("**********************");
+        System.out.println("********* Generics *************");
 
 
 //      Generics
@@ -27,7 +28,7 @@ public class Main {
         int number = list.getItems(0); // unboxing
 
         System.out.println(number);
-        System.out.println("**********************");
+        System.out.println("********** User ************");
 
 //      User
 
@@ -41,7 +42,7 @@ public class Main {
         else
             System.out.println("user1 is less than user2");
 
-        System.out.println("**********************");
+        System.out.println("*********** Utils **********");
 
 //      Utils
 
@@ -53,7 +54,7 @@ public class Main {
 
         Utils.print("Hi",10);
 
-        System.out.println("**********************");
+        System.out.println("********** Wildcard ************");
 
         User user = new Instructor(10);
         var instructor = new GenericList<Instructor>();
@@ -65,7 +66,7 @@ public class Main {
         Utils.printUser(instructor);
         Utils.printUser(users);
 
-        System.out.println("**********************");
+        System.out.println("********** Iterable ************");
 
         var lists = new GenericList<String>();
 //        lists.items[0] = "x";
@@ -87,19 +88,19 @@ public class Main {
         for (var item: lists)
             System.out.println(item);
 
-        System.out.println("**********************");
+        System.out.println("********** collection demo ************");
 
 //      collection demo
 
         CollectionDemo.show();
 
-        System.out.println("**********************");
+        System.out.println("*********** List demo ***********");
 
 //        List demo
 
         ListDemo.showList();
 
-        System.out.println("**********************");
+        System.out.println("********** Customer ************");
 
 //         Customer
 
@@ -113,20 +114,25 @@ public class Main {
         Collections.sort(customers, new EmailComparator());
         System.out.println(customers);
 
-        System.out.println("**********************");
+        System.out.println("*********** queue ***********");
 
 //        queue
 
         QueueDemo.show();
 
-        System.out.println("**********************");
+        System.out.println("********** Set ************");
 
 //        Set
         SetDemo.show();
 
-        System.out.println("**********************");
+        System.out.println("************ Maps **********");
 
 //      Maps
         MapDemo.show();
+
+        System.out.println("********** Lambdas ************");
+
+//        Lambdas
+        LambdasDemo.show();
     }
 }

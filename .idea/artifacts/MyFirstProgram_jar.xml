@@ -2,7 +2,7 @@
   <artifact type="jar" name="MyFirstProgram:jar">
     <output-path>$PROJECT_DIR$/out/artifacts/MyFirstProgram_jar</output-path>
     <root id="archive" name="MyFirstProgram.jar">
-      <element id="module-output" name="MyFirstProgram" />
+      <element id="module-output" name="JavaClasses&amp;Methods" />
     </root>
   </artifact>
 </component>
