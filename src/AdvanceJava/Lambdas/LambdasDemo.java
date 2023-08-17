@@ -79,6 +79,9 @@ public class LambdasDemo {
 
     List<String> list2 = List.of("a","b","d","g");
     Consumer<String> print = System.out::println;
+
+    System.out.println("------");
+
     Consumer<String> printUpperCase = item -> System.out.println(item.toUpperCase());
 
     list2.forEach(print.andThen(printUpperCase).andThen(print));
@@ -112,6 +115,9 @@ public class LambdasDemo {
             .compose(replaceColon)
             .apply("key:value");
     System.out.println(result3);
+
+    System.out.println("------");
+
     System.out.println(result2);
 
 //    Predicate Interface
@@ -130,6 +136,9 @@ public class LambdasDemo {
     var test2 = hasRightAndLeftBrace.test("{Niloo}");
 
     System.out.println(test2);
+
+    System.out.println("------");
+
     System.out.println(test3);
 
     //    Binary Operator Interface

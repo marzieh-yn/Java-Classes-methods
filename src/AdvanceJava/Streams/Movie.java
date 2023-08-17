@@ -1,9 +1,8 @@
 package AdvanceJava.Streams;
 
 public class Movie implements Comparable<Movie> {
-  private String title;
   private int likes;
-
+  private String title;
 
   private Genre genre;
 
@@ -13,16 +12,15 @@ public class Movie implements Comparable<Movie> {
     this.genre = genre;
   }
 
-  public String getTitle() {
-    return title;
+  public int getLikes() {
+    return likes;
   }
-
   public Genre getGenre() {
     return genre;
   }
 
-  public int getLikes() {
-    return likes;
+  public String getTitle() {
+    return title;
   }
 
   @Override

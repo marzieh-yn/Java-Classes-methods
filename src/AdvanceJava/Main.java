@@ -4,6 +4,7 @@ import AdvanceJava.Collections.*;
 import AdvanceJava.Exceptions.ExceptionsDemo;
 import AdvanceJava.Generics.*;
 import AdvanceJava.Lambdas.LambdasDemo;
+import AdvanceJava.Streams.StreamsDemo;
 
 import java.io.IOException;
 import java.util.*;
@@ -134,5 +135,10 @@ public class Main {
 
 //        Lambdas
         LambdasDemo.show();
+
+        System.out.println("********** Streams Demo ************");
+
+//        Streams Demo
+        StreamsDemo.show();
     }
 }
