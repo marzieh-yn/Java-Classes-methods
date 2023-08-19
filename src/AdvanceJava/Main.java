@@ -1,6 +1,7 @@
 package AdvanceJava;
 
 import AdvanceJava.Collections.*;
+import AdvanceJava.Concurrency.ThreadDemo;
 import AdvanceJava.Exceptions.ExceptionsDemo;
 import AdvanceJava.Generics.*;
 import AdvanceJava.Lambdas.LambdasDemo;
@@ -140,5 +141,12 @@ public class Main {
 
 //        Streams Demo
         StreamsDemo.show();
+
+        System.out.println("********** Thread Process ************");
+
+        ThreadDemo.show();
+        System.out.println(Thread.currentThread());
+        System.out.println(Thread.activeCount());
+        System.out.println(Runtime.getRuntime().availableProcessors());
     }
 }
