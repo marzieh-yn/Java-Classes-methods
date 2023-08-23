@@ -3,6 +3,8 @@ package AdvanceJava;
 import AdvanceJava.Collections.*;
 import AdvanceJava.Concurrency.ThreadDemo;
 import AdvanceJava.Exceptions.ExceptionsDemo;
+import AdvanceJava.Executors.CompletableFuturesDemo;
+import AdvanceJava.Executors.ExecutorsDemo;
 import AdvanceJava.Generics.*;
 import AdvanceJava.Lambdas.LambdasDemo;
 import AdvanceJava.Streams.StreamsDemo;
@@ -145,8 +147,13 @@ public class Main {
         System.out.println("********** Thread Process ************");
 
         ThreadDemo.show();
-        System.out.println(Thread.currentThread());
-        System.out.println(Thread.activeCount());
-        System.out.println(Runtime.getRuntime().availableProcessors());
+//        System.out.println(Thread.currentThread());
+//        System.out.println(Thread.activeCount());
+//        System.out.println(Runtime.getRuntime().availableProcessors());
+
+        System.out.println("********** Executors ************");
+        
+        ExecutorsDemo.show();
+        CompletableFuturesDemo.show();
     }
 }

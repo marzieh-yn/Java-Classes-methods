@@ -60,7 +60,7 @@ public class ThreadDemo {
 
     // We can put a thread to sleep
     try {
-      thread1.sleep(5000);
+      thread1.sleep(1000);
     } catch (InterruptedException e) {
       e.printStackTrace();
     }
